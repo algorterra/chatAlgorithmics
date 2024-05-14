@@ -17,7 +17,7 @@ function App() {
 
     setMessage('');
 
-    fetch("http://localhost:8080/", {
+    fetch("https://chatalgorithmics.onrender.com/", {
       method: 'post',
       headers: {
         'Content-Type': 'application/json',
