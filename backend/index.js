@@ -6,9 +6,11 @@ import * as dotenv from 'dotenv';
 
 
 const app = express();
-
+const cors =require("cors")
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors(
+  {origin:'https://chatalgorithmics.onrender.com'}
+));
 
 dotenv.config();
 
