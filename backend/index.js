@@ -2,12 +2,15 @@ import OpenAI from 'openai';
 import express, {request} from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
+import * as dotenv from 'dotenv';
 
 
 const app = express();
 
 app.use(bodyParser.json());
 app.use(cors());
+
+dotenv.config();
 
 const openai = new OpenAI({
   organization: 'org-zvQgdrUrI0wqfaS1bmDWyVdf',
