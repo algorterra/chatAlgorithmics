@@ -15,7 +15,7 @@ app.use(cors(
 dotenv.config();
 
 const openai = new OpenAI({
-  organization: 'org-6TexSmon4W0wd456pWBAWgdJ',
+  organization: 'org-zvQgdrUrI0wqfaS1bmDWyVdf',
   apiKey:process.env.OPENAI_API_KEY,
 });
 
